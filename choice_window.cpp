@@ -7,6 +7,7 @@ choice_window::choice_window(QWidget *parent) :
     ui(new Ui::choice_window)
 {
     ui->setupUi(this);
+    this->setFixedSize(610,333);
 
 }
 

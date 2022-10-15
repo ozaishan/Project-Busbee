@@ -7,6 +7,7 @@ adminlogin::adminlogin(QWidget *parent) :
     ui(new Ui::adminlogin)
 {
         ui->setupUi(this);
+        this->setFixedSize(610,333);
         ui->label_value->hide();
         ui->progressBar->hide();
      admindb= QSqlDatabase::addDatabase("QSQLITE");

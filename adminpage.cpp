@@ -6,6 +6,7 @@ adminpage::adminpage(QWidget *parent) :
     ui(new Ui::adminpage)
 {
     ui->setupUi(this);
+    this->setFixedSize(610,333);
 }
 
 adminpage::~adminpage()
