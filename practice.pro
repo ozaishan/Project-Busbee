@@ -29,6 +29,7 @@ FORMS += \
     canceldialog.ui \
     choice_window.ui \
     mainwindow.ui
+    RC_ICONS = Busbee1.ico
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -37,3 +38,6 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     pics.qrc
+
+
+

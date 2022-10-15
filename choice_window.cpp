@@ -2,6 +2,7 @@
 #include "ui_choice_window.h"
 #include "adminlogin.h"
 
+
 choice_window::choice_window(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::choice_window)

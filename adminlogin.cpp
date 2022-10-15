@@ -1,7 +1,7 @@
 #include "adminlogin.h"
 #include "ui_adminlogin.h"
-
-
+#include "choice_window.h"
+choice_window *ch1;
 adminlogin::adminlogin(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::adminlogin)
@@ -76,4 +76,12 @@ if (count<1){
 
 
 
+
+
+void adminlogin::on_pushButton_clicked()
+{
+  hide();
+  ch1 = new choice_window(this);
+  ch1->show();
+}
 

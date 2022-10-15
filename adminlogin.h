@@ -7,6 +7,7 @@
 #include <QFileInfo>
 #include "adminpage.h"
 
+
 namespace Ui {
 class adminlogin;
 }
@@ -26,8 +27,11 @@ private slots:
 
 
 
+    void on_pushButton_clicked();
+
 private:
     Ui::adminlogin *ui;
+
     QSqlDatabase admindb;
 };
 
