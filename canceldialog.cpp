@@ -9,6 +9,7 @@ Canceldialog::Canceldialog(QWidget *parent) :
     ui(new Ui::Canceldialog)
 {
     ui->setupUi(this);
+     this->setFixedSize(372,121);
 }
 
 Canceldialog::~Canceldialog()
