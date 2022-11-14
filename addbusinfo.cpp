@@ -14,6 +14,11 @@ Addbusinfo::Addbusinfo(QWidget *parent) :
       qDebug("failed");
    }else{
       qDebug("sucessfool");
+      if (!Businfo.open()){
+ui->Label_Status->setText("Failed to open the data base");
+      }else{
+ui->Label_Status->setText("Connected sucessfully");
+  }
 
 }
 }
