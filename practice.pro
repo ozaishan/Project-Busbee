@@ -9,6 +9,7 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addbusinfo.cpp \
     adminlogin.cpp \
     adminpage.cpp \
     canceldialog.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
+    addbusinfo.h \
     adminlogin.h \
     adminpage.h \
     canceldialog.h \
@@ -24,6 +26,7 @@ HEADERS += \
     mainwindow.h
 
 FORMS += \
+    addbusinfo.ui \
     adminlogin.ui \
     adminpage.ui \
     canceldialog.ui \
@@ -37,6 +40,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 RESOURCES += \
+    Resourse.qrc \
     pics.qrc
 
 

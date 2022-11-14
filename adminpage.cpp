@@ -1,5 +1,6 @@
 #include "adminpage.h"
 #include "ui_adminpage.h"
+#include "addbusinfo.h"
 
 adminpage::adminpage(QWidget *parent) :
     QDialog(parent),
@@ -13,3 +14,14 @@ adminpage::~adminpage()
 {
     delete ui;
 }
+
+void adminpage::on_pushButton_clicked() // add bus information
+{
+  hide();
+
+  Addbusinfo businfoopen;
+  businfoopen.setModal(true);
+  businfoopen.exec();
+
+}
+

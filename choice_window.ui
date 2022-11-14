@@ -49,8 +49,8 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>C:/Users/acer/Downloads/pngegg (33).png</normaloff>C:/Users/acer/Downloads/pngegg (33).png</iconset>
+    <iconset resource="Resourse.qrc">
+     <normaloff>:/img/images/user.png</normaloff>:/img/images/user.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -159,8 +159,8 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
     <string/>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>C:/Users/acer/Downloads/pngegg (34).png</normaloff>C:/Users/acer/Downloads/pngegg (34).png</iconset>
+    <iconset resource="Resourse.qrc">
+     <normaloff>:/img/images/admin.png</normaloff>:/img/images/admin.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -170,6 +170,8 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="Resourse.qrc"/>
+ </resources>
  <connections/>
 </ui>

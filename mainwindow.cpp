@@ -12,6 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     this->setFixedSize(610,333);
 
+
 }
 
 MainWindow::~MainWindow()
