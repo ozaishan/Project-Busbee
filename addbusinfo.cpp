@@ -15,7 +15,6 @@ Addbusinfo::Addbusinfo(QWidget *parent) :
    }else{
       qDebug("sucessfool");
 
-
 }
 }
 
