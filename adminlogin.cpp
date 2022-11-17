@@ -59,6 +59,9 @@ if (count==1){
         qApp->processEvents(QEventLoop::AllEvents);
 
         }
+    admindb.close();
+    admindb.removeDatabase(QSqlDatabase::defaultConnection);
+    qDebug("Db.closed");
     this->hide();
     adminpage adminopen;
     adminopen.setModal(true);

@@ -3,6 +3,9 @@
 
 #include <QDialog>
 #include <QtSql>
+#include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QFileInfo>
 namespace Ui {
 class Addbusinfo;
 }
@@ -17,6 +20,10 @@ public:
 
 private slots:
     void on_pushButton_clicked();
+
+    void on_GoBack_clicked();
+
+    void on_Push_save_clicked();
 
 private:
     Ui::Addbusinfo *ui;
