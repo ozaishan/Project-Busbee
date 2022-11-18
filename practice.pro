@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     addbusinfo.cpp \
+    addrouteinfo.cpp \
     adminlogin.cpp \
     adminpage.cpp \
     canceldialog.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 
 HEADERS += \
     addbusinfo.h \
+    addrouteinfo.h \
     adminlogin.h \
     adminpage.h \
     canceldialog.h \
@@ -27,6 +29,7 @@ HEADERS += \
 
 FORMS += \
     addbusinfo.ui \
+    addrouteinfo.ui \
     adminlogin.ui \
     adminpage.ui \
     canceldialog.ui \

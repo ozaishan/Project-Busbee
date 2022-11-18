@@ -60,7 +60,7 @@ if (count==1){
 
         }
     admindb.close();
-    admindb.removeDatabase(QSqlDatabase::defaultConnection);
+
     qDebug("Db.closed");
     this->hide();
     adminpage adminopen;

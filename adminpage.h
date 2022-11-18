@@ -3,6 +3,9 @@
 
 #include <QDialog>
 #include"addbusinfo.h"
+#include"addrouteinfo.h"
+
+
 
 namespace Ui {
 class adminpage;
@@ -21,9 +24,13 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_4_clicked();
+
 private:
     Ui::adminpage *ui;
     Addbusinfo *Ab;
+    addrouteinfo *addroute;
+
 
 };
 

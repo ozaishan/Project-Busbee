@@ -26,7 +26,7 @@ Addbusinfo::~Addbusinfo()
 
 void Addbusinfo::on_GoBack_clicked()
 {
-    close();
+    hide();
     adminpage pageopen;
     pageopen.setModal(true);
     pageopen.exec();
@@ -64,10 +64,18 @@ ui->Label_Status->setText("Connected sucessfully"); }
       qry.bindValue(":EID", eid);
       qry.bindValue(":BUSNO", Busno);
       if(qry.exec()){
-          qDebug("sucess");
+          qDebug("sucess updating data ");
+          QMessageBox::critical(this, "Saved", "Sucess updating data");
+      }
+      else{
+          QMessageBox::critical(this, " not Saved", "error updating data");
       }
 
       if(!qry.exec(query)){
           qDebug("error creating table // it may already exxist");
       }
+      Businfo.close();
+
+      qDebug("Db.closed");
+
 }

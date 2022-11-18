@@ -50,7 +50,7 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>110</y>
+     <y>200</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -82,8 +82,41 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
   <widget class="QPushButton" name="pushButton_3">
    <property name="geometry">
     <rect>
+     <x>500</x>
+     <y>280</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}</string>
+   </property>
+   <property name="text">
+    <string>GO BACK</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
      <x>140</x>
-     <y>180</y>
+     <y>120</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -109,7 +142,7 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
 }</string>
    </property>
    <property name="text">
-    <string/>
+    <string>Insert route info</string>
    </property>
   </widget>
  </widget>

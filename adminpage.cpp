@@ -2,6 +2,7 @@
 #include "ui_adminpage.h"
 #include "addbusinfo.h"
 #include "adminlogin.h"
+#include "addbusinfo.h"
 
 adminpage::adminpage(QWidget *parent) :
     QDialog(parent),
@@ -33,5 +34,14 @@ void adminpage::on_pushButton_3_clicked()
     adminlogin loginfoopen;
     loginfoopen.setModal(true);
     loginfoopen.exec();
+}
+
+
+void adminpage::on_pushButton_4_clicked()
+{
+    hide();
+    addrouteinfo routeinfoopen;
+    routeinfoopen.setModal(true);
+    routeinfoopen.exec();
 }
 
