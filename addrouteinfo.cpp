@@ -1,5 +1,7 @@
 #include "addrouteinfo.h"
 #include "ui_addrouteinfo.h"
+#include <QDebug>
+#include <QMessageBox>
 
 addrouteinfo::addrouteinfo(QWidget *parent) :
     QDialog(parent),
@@ -28,7 +30,14 @@ void addrouteinfo::on_saveButton_clicked()
     qry.prepare("UPDATE driverinfo SET  RouteFrom=:RouteFrom, RouteTo=:RouteTo WHERE EID="+ui->geteid->text()+"   ");
     qry.bindValue(":RouteFrom", routefrom);
     qry.bindValue(":RouteTo", routeto);
-    qry.exec();
+    if(qry.exec()){
+        qDebug("sucess updating data ");
+        QMessageBox::critical(this, "Saved", "Sucess updating data");
+    }
+    else{
+        QMessageBox::critical(this, " not Saved", "error updating data");
+    }
+
 
 }
 
