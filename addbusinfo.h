@@ -25,6 +25,8 @@ private slots:
 
     void on_Push_save_clicked();
 
+    void on_push_udate_clicked();
+
 private:
     Ui::Addbusinfo *ui;
      QSqlDatabase Businfo;

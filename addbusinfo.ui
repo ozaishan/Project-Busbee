@@ -42,7 +42,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>70</y>
+      <y>120</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -55,7 +55,7 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>120</y>
+      <y>70</y>
       <width>81</width>
       <height>21</height>
      </rect>
@@ -81,7 +81,7 @@
     <property name="geometry">
      <rect>
       <x>122</x>
-      <y>70</y>
+      <y>120</y>
       <width>291</width>
       <height>24</height>
      </rect>
@@ -90,8 +90,8 @@
    <widget class="QLineEdit" name="lineEdit_2">
     <property name="geometry">
      <rect>
-      <x>122</x>
-      <y>120</y>
+      <x>120</x>
+      <y>70</y>
       <width>291</width>
       <height>24</height>
      </rect>
@@ -110,7 +110,7 @@
    <widget class="QPushButton" name="Push_save">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>160</x>
       <y>230</y>
       <width>80</width>
       <height>24</height>
@@ -118,6 +118,19 @@
     </property>
     <property name="text">
      <string>Save </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="push_udate">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>230</y>
+      <width>80</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>update</string>
     </property>
    </widget>
   </widget>

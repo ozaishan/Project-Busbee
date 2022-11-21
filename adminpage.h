@@ -4,6 +4,7 @@
 #include <QDialog>
 #include"addbusinfo.h"
 #include"addrouteinfo.h"
+#include"viewallinfo.h"
 
 
 
@@ -26,10 +27,13 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::adminpage *ui;
     Addbusinfo *Ab;
     addrouteinfo *addroute;
+    viewallinfo *viewinfo;
 
 
 };

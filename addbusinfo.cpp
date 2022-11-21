@@ -79,3 +79,32 @@ ui->Label_Status->setText("Connected sucessfully"); }
       qDebug("Db.closed");
 
 }
+
+void Addbusinfo::on_push_udate_clicked()
+{
+    Businfo= QSqlDatabase::addDatabase("QSQLITE");
+   Businfo.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+   if (!Businfo.open()){
+      qDebug("failed");
+   }else{
+      qDebug("sucessfool"); }
+   QString Drivername = ui->lineEdit->text();
+   QString eid = ui->lineEdit_2->text();
+   QString Busno = ui->lineEdit_3->text();
+   QSqlQuery qry;
+   qry.prepare("UPDATE driverinfo SET  NAME=:NAME, BUSNO=:BUSNO WHERE EID="+ui->lineEdit_2->text()+"   ");
+   qry.bindValue(":NAME", Drivername );
+   qry.bindValue(":BUSNO", Busno);
+
+   if(qry.exec()){
+       qDebug("sucess updating data ");
+       QMessageBox::critical(this, "updated", "Sucess updating data");
+   }
+   else{
+       QMessageBox::critical(this, " not updated", "error updating data");
+   }
+
+Businfo.close();
+
+}
+
