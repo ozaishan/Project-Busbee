@@ -23,7 +23,7 @@ public:
 private slots:
     void on_login_clicked();
 
-    void on_lineEdit_username_textEdited(const QString &arg1);
+
 
 
 

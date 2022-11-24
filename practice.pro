@@ -17,7 +17,10 @@ SOURCES += \
     choice_window.cpp \
     main.cpp \
     mainwindow.cpp \
-    viewallinfo.cpp
+    signup_page.cpp \
+    userpage.cpp \
+    viewallinfo.cpp \
+    userwindow.cpp
 
 HEADERS += \
     addbusinfo.h \
@@ -27,7 +30,10 @@ HEADERS += \
     canceldialog.h \
     choice_window.h \
     mainwindow.h \
-    viewallinfo.h
+    signup_page.h \
+    userpage.h \
+    viewallinfo.h \
+    userwindow.h
 
 FORMS += \
     addbusinfo.ui \
@@ -37,7 +43,10 @@ FORMS += \
     canceldialog.ui \
     choice_window.ui \
     mainwindow.ui \
-    viewallinfo.ui
+    signup_page.ui \
+    userpage.ui \
+    viewallinfo.ui\
+    userwindow.ui
     RC_ICONS = Busbee1.ico
 
 # Default rules for deployment.

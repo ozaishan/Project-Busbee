@@ -4,5 +4,7 @@
         <file>images/loginlogo.png</file>
         <file>images/user.png</file>
         <file>images/admin.png</file>
+        <file>images/userloginlogo.png</file>
+        <file>images/BusBee_sgnin.png</file>
     </qresource>
 </RCC>

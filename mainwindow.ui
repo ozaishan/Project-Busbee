@@ -59,7 +59,11 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;NextPage&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">background-color: rgb(249,191,81);
+font: 700 11pt &quot;Segoe UI&quot;;
+color: black;
+border-radius: 20px;
+</string>
     </property>
     <property name="text">
      <string>OK</string>
@@ -78,7 +82,11 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Exit the app&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">background-color: rgb(249,191,81);
+font: 700 11pt &quot;Segoe UI&quot;;
+color: black;
+border-radius: 20px;
+</string>
     </property>
     <property name="text">
      <string>Cancel</string>

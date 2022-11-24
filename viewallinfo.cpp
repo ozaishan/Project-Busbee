@@ -4,6 +4,8 @@
 #include <QtSql>
 #include <QSqlDatabase>
 #include <QMessageBox>
+#include "adminpage.h"
+adminpage *apo;
 
 viewallinfo::viewallinfo(QWidget *parent) :
     QDialog(parent),
@@ -53,5 +55,13 @@ void viewallinfo::on_pushButton_clicked()
         QMessageBox::critical(this, "DELETED", "data deleted");
     }
     allinfo.close();
+}
+
+
+void viewallinfo::on_pushButton_2_clicked()
+{
+    this->hide();
+    apo = new adminpage();
+    apo->show();
 }
 

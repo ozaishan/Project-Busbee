@@ -22,6 +22,8 @@ public:
 private slots:
     void on_saveButton_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::addrouteinfo *ui;
     QSqlDatabase routeinfo;

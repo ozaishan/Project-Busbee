@@ -36,3 +36,11 @@ void choice_window::on_pushButton_3_clicked()
     close();
 
 }
+
+void choice_window::on_pushButton_clicked()
+{
+    close();
+ user = new userwindow(this);
+ user->show();
+}
+

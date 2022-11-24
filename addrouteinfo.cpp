@@ -2,6 +2,8 @@
 #include "ui_addrouteinfo.h"
 #include <QDebug>
 #include <QMessageBox>
+#include "adminpage.h"
+adminpage *apo1;
 
 addrouteinfo::addrouteinfo(QWidget *parent) :
     QDialog(parent),
@@ -39,5 +41,13 @@ void addrouteinfo::on_saveButton_clicked()
     }
 
 
+}
+
+
+void addrouteinfo::on_pushButton_clicked()
+{
+    this->hide();
+    apo1 = new adminpage();
+    apo1->show();
 }
 

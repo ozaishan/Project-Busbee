@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include"adminlogin.h"
+#include"userwindow.h"
 
 namespace Ui {
 class choice_window;
@@ -23,9 +24,13 @@ private slots:
 
     void on_pushButton_3_clicked();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::choice_window *ui;
     adminlogin *admin;
+    userwindow *user;
+
 };
 
 #endif // CHOICE_WINDOW_H

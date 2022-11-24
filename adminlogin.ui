@@ -57,8 +57,11 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 53, 97);
-font: 700 11pt &quot;Segoe UI&quot;;</string>
+     <string notr="true">background-color: rgb(249,191,81);
+font: 700 11pt &quot;Segoe UI&quot;;
+color: black;
+border-radius: 20px;
+</string>
     </property>
     <property name="text">
      <string>login</string>
@@ -129,8 +132,11 @@ font: 700 11pt &quot;Segoe UI&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 170, 255);
-font: 700 11pt &quot;Segoe UI&quot;;</string>
+    <string notr="true">background-color: rgb(249,191,81);
+font: 700 11pt &quot;Segoe UI&quot;;
+color: black;
+border-radius: 20px;
+</string>
    </property>
    <property name="text">
     <string>Go Back</string>
