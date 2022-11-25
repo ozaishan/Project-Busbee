@@ -21,7 +21,11 @@ SOURCES += \
     userpage.cpp \
     viewallinfo.cpp \
     userwindow.cpp \
-    viewbusinfo.cpp
+    viewbusinfo.cpp \
+    seatbooking.cpp \
+    book.cpp \
+    cancel.cpp \
+    mydb.cpp
 
 HEADERS += \
     addbusinfo.h \
@@ -35,7 +39,11 @@ HEADERS += \
     userpage.h \
     viewallinfo.h \
     userwindow.h \
-    viewbusinfo.h
+    viewbusinfo.h \
+    seatbooking.h \
+    book.h \
+    cancel.h \
+    mydb.h
 
 FORMS += \
     addbusinfo.ui \
@@ -49,7 +57,10 @@ FORMS += \
     userpage.ui \
     viewallinfo.ui\
     userwindow.ui \
-    viewbusinfo.ui
+    viewbusinfo.ui \
+    seatbooking.ui \
+    book.ui \
+    cancel.ui
     RC_ICONS = Busbee1.ico
 
 # Default rules for deployment.

@@ -6,5 +6,9 @@
         <file>images/admin.png</file>
         <file>images/userloginlogo.png</file>
         <file>images/BusBee_sgnin.png</file>
+        <file>images/available.jpg</file>
+        <file>images/booked.jpg</file>
+        <file>images/infoImage.jpg</file>
+        <file>images/steering.png</file>
     </qresource>
 </RCC>

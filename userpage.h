@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_show_clicked();
 
+    void on_pushButton_MY_clicked();
+
 private:
     Ui::Userpage *ui;
 };
