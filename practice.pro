@@ -20,7 +20,8 @@ SOURCES += \
     signup_page.cpp \
     userpage.cpp \
     viewallinfo.cpp \
-    userwindow.cpp
+    userwindow.cpp \
+    viewbusinfo.cpp
 
 HEADERS += \
     addbusinfo.h \
@@ -33,7 +34,8 @@ HEADERS += \
     signup_page.h \
     userpage.h \
     viewallinfo.h \
-    userwindow.h
+    userwindow.h \
+    viewbusinfo.h
 
 FORMS += \
     addbusinfo.ui \
@@ -46,7 +48,8 @@ FORMS += \
     signup_page.ui \
     userpage.ui \
     viewallinfo.ui\
-    userwindow.ui
+    userwindow.ui \
+    viewbusinfo.ui
     RC_ICONS = Busbee1.ico
 
 # Default rules for deployment.
