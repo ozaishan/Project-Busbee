@@ -38,6 +38,7 @@ void viewbusinfo::on_push_load_clicked()
      proxyPersonas->setFilterKeyColumn(-1);
   ui->tableView->setModel(proxyPersonas);
 
+
   viewbus.close();
 }
 

@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_MY_clicked();
 
+    void on_pushButton_cancel_clicked();
+
 private:
     Ui::Userpage *ui;
 };

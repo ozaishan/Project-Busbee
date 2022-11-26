@@ -3,9 +3,11 @@
 #include "userwindow.h"
 #include "viewbusinfo.h"
 #include "seatbooking.h"
+#include "deletetickets.h"
 userwindow *us2;
 viewbusinfo *vb1;
 Seatbooking *sb1;
+Deletetickets *dl1;
 
 Userpage::Userpage(QWidget *parent) :
     QDialog(parent),
@@ -45,5 +47,13 @@ void Userpage::on_pushButton_MY_clicked()
     sb1 = new Seatbooking();
     sb1->show();
 
+}
+
+
+void Userpage::on_pushButton_cancel_clicked()
+{
+
+    dl1 = new Deletetickets(this);
+    dl1->show();
 }
 

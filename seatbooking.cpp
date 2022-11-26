@@ -1,5 +1,9 @@
 #include "seatbooking.h"
 #include "ui_seatbooking.h"
+#include "userpage.h"
+#include "getbus.h"
+getbus *gb1;
+Userpage *ur1;
 
 Seatbooking::Seatbooking(QWidget *parent)
     : QMainWindow(parent)
@@ -104,5 +108,22 @@ void Seatbooking::on_btnReset_clicked()
     }
 
     updateUI();
+}
+
+
+void Seatbooking::on_pushButton_goback_clicked()
+{
+    this->hide();
+    ur1 = new Userpage();
+    ur1->show();
+}
+
+
+void Seatbooking::on_pushButton_clicked()
+{
+
+    this->hide();
+    gb1 = new getbus();
+    gb1->show();
 }
 

@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>40</y>
+     <y>20</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -50,7 +50,7 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>200</y>
+     <y>120</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -116,7 +116,7 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
    <property name="geometry">
     <rect>
      <x>140</x>
-     <y>120</y>
+     <y>70</y>
      <width>351</width>
      <height>41</height>
     </rect>
@@ -143,6 +143,72 @@ radius: 1.35, stop: 0 #fff, stop: 1 #bbb
    </property>
    <property name="text">
     <string>Insert route info</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>170</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}</string>
+   </property>
+   <property name="text">
+    <string>View user informations</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>220</y>
+     <width>351</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 20px;
+border-style: outset;
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888
+);
+padding: 5px;
+}
+
+QPushButton:hover {
+background: qradialgradient(
+cx: 0.3, cy: -0.4, fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb
+);
+}</string>
+   </property>
+   <property name="text">
+    <string>View booked ticket informations</string>
    </property>
   </widget>
  </widget>

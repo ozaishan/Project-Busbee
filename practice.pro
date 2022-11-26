@@ -15,17 +15,21 @@ SOURCES += \
     adminpage.cpp \
     canceldialog.cpp \
     choice_window.cpp \
+    deletetickets.cpp \
     main.cpp \
     mainwindow.cpp \
     signup_page.cpp \
     userpage.cpp \
     viewallinfo.cpp \
     userwindow.cpp \
+    viewbookedticketsinfo.cpp \
     viewbusinfo.cpp \
     seatbooking.cpp \
     book.cpp \
     cancel.cpp \
-    mydb.cpp
+    mydb.cpp \
+    getbus.cpp \
+    viewuserinfo.cpp
 
 HEADERS += \
     addbusinfo.h \
@@ -34,16 +38,20 @@ HEADERS += \
     adminpage.h \
     canceldialog.h \
     choice_window.h \
+    deletetickets.h \
     mainwindow.h \
     signup_page.h \
     userpage.h \
     viewallinfo.h \
     userwindow.h \
+    viewbookedticketsinfo.h \
     viewbusinfo.h \
     seatbooking.h \
     book.h \
     cancel.h \
-    mydb.h
+    mydb.h \
+    getbus.h \
+    viewuserinfo.h
 
 FORMS += \
     addbusinfo.ui \
@@ -52,15 +60,19 @@ FORMS += \
     adminpage.ui \
     canceldialog.ui \
     choice_window.ui \
+    deletetickets.ui \
     mainwindow.ui \
     signup_page.ui \
     userpage.ui \
     viewallinfo.ui\
     userwindow.ui \
+    viewbookedticketsinfo.ui \
     viewbusinfo.ui \
     seatbooking.ui \
     book.ui \
-    cancel.ui
+    cancel.ui \
+    getbus.ui \
+    viewuserinfo.ui
     RC_ICONS = Busbee1.ico
 
 # Default rules for deployment.

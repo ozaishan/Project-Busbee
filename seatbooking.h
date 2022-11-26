@@ -24,6 +24,10 @@ void on_btnCancel_clicked();
 
 void on_btnReset_clicked();
 
+void on_pushButton_goback_clicked();
+
+void on_pushButton_clicked();
+
 private:
     Ui::Seatbooking *ui;
     book *ptrBook;

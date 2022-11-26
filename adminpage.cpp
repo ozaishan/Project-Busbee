@@ -3,7 +3,11 @@
 #include "addbusinfo.h"
 #include "choice_window.h"
 #include "addbusinfo.h"
+#include "viewuserinfo.h"
+#include "viewbookedticketsinfo.h"
+viewuserinfo *vsi;
 choice_window *ch2;
+viewbookedticketsinfo *vbti;
 adminpage::adminpage(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::adminpage)
@@ -53,5 +57,21 @@ void adminpage::on_pushButton_2_clicked()
     viewallinfo viewinfo;
     viewinfo.setModal(true);
     viewinfo.exec();
+}
+
+
+void adminpage::on_pushButton_5_clicked()
+{
+    this->hide();
+    vsi = new viewuserinfo();
+    vsi->show();
+}
+
+
+void adminpage::on_pushButton_6_clicked()
+{
+    this->hide();
+    vbti = new viewbookedticketsinfo();
+    vbti->show();
 }
 
