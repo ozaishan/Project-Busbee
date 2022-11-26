@@ -8,6 +8,7 @@ viewbookedticketsinfo::viewbookedticketsinfo(QWidget *parent) :
     ui(new Ui::viewbookedticketsinfo)
 {
     ui->setupUi(this);
+    this->setFixedSize(610,333);
 }
 
 viewbookedticketsinfo::~viewbookedticketsinfo()
