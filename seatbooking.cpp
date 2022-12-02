@@ -84,31 +84,31 @@ void Seatbooking::on_btnCancel_clicked()
 }
 
 
-void Seatbooking::on_btnReset_clicked()
-{
-    QSqlQuery query(MyDB::getInstance()->getDBInstance());
-    query.prepare("update Busbee_booking set Available = 'Y'");
+//void Seatbooking::on_btnReset_clicked()
+//{
+////    QSqlQuery query(MyDB::getInstance()->getDBInstance());
+////    query.prepare("update Busbee_booking set Available = 'Y'");
 
-    if(!query.exec())
-    {
-        qDebug() << query.lastError().text() << query.lastQuery();
-        //ui->lblInfo->setText(query.lastError().text());
-    }
-    else{
-        if(query.numRowsAffected() > 0)
-        {
+////    if(!query.exec())
+////    {
+////        qDebug() << query.lastError().text() << query.lastQuery();
+////        //ui->lblInfo->setText(query.lastError().text());
+////    }
+////    else{
+////        if(query.numRowsAffected() > 0)
+////        {
 
-            qDebug() << "Update was successful. "<< query.lastQuery();
-        }
-        else
-        {
-            qDebug() << "Update Failed. "<< query.lastQuery();
-        }
+////            qDebug() << "Update was successful. "<< query.lastQuery();
+////        }
+////        else
+////        {
+////            qDebug() << "Update Failed. "<< query.lastQuery();
+////        }
 
-    }
+////    }
 
-    updateUI();
-}
+////    updateUI();
+//}
 
 
 void Seatbooking::on_pushButton_goback_clicked()

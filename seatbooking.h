@@ -22,7 +22,7 @@ void on_btnBook_clicked();
 
 void on_btnCancel_clicked();
 
-void on_btnReset_clicked();
+//void on_btnReset_clicked();
 
 void on_pushButton_goback_clicked();
 

@@ -21,7 +21,7 @@ addrouteinfo::~addrouteinfo()
 void addrouteinfo::on_saveButton_clicked()
 {
     routeinfo= QSqlDatabase::addDatabase("QSQLITE");
-  routeinfo.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+  routeinfo.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
    if (!routeinfo.open()){
       qDebug("failed");
    }else{

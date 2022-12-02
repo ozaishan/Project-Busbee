@@ -96,7 +96,7 @@ color: grey;</string>
       </rect>
      </property>
      <property name="text">
-      <string>RouteFrom:</string>
+      <string>RouteTo:</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_4">

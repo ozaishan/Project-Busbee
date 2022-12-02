@@ -23,7 +23,7 @@ void viewbusinfo::on_push_load_clicked()
 {
     QSqlQueryModel * modal = new QSqlQueryModel();
     viewbus= QSqlDatabase::addDatabase("QSQLITE");
-  viewbus.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+  viewbus.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
    if (!viewbus.open()){
       qDebug("failed");
    }else{

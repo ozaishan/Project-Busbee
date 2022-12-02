@@ -36,7 +36,7 @@ void Addbusinfo::on_GoBack_clicked()
 void Addbusinfo::on_Push_save_clicked()
 {
     Businfo= QSqlDatabase::addDatabase("QSQLITE");
-   Businfo.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+   Businfo.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
    if (!Businfo.open()){
       qDebug("failed");
    }else{
@@ -83,7 +83,7 @@ ui->Label_Status->setText("Connected sucessfully"); }
 void Addbusinfo::on_push_udate_clicked()
 {
     Businfo= QSqlDatabase::addDatabase("QSQLITE");
-   Businfo.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+   Businfo.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
    if (!Businfo.open()){
       qDebug("failed");
    }else{

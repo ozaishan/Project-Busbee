@@ -42,4 +42,3 @@ void MainWindow::on_pushButton_clicked()
         QMessageBox::information(this, "Error-404!", "You havent agreed terms and conditions of BusBee");
     }
 }
-

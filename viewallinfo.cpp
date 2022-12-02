@@ -25,7 +25,7 @@ void viewallinfo::on_pushButton_load_clicked()
 {
       QSqlQueryModel * modal = new QSqlQueryModel();
       allinfo= QSqlDatabase::addDatabase("QSQLITE");
-    allinfo.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+    allinfo.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
      if (!allinfo.open()){
         qDebug("failed");
      }else{
@@ -43,7 +43,7 @@ void viewallinfo::on_pushButton_load_clicked()
 void viewallinfo::on_pushButton_clicked()
 {
     allinfo= QSqlDatabase::addDatabase("QSQLITE");
-  allinfo.setDatabaseName("C:/Users/acer/Desktop/Database/BusBee.db");
+  allinfo.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
    if (!allinfo.open()){
       qDebug("failed");
    }else{

@@ -11,7 +11,7 @@ adminlogin::adminlogin(QWidget *parent) :
         ui->label_value->hide();
         ui->progressBar->hide();
      admindb= QSqlDatabase::addDatabase("QSQLITE");
-    admindb.setDatabaseName("C:/Users/acer/Desktop/Database/adminlogin.db");
+    admindb.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
     if (!admindb.open()){
         ui->label_status->setText("Failed to open the data base");
     }else{
@@ -37,7 +37,7 @@ if (!admindb.isOpen()){
     return;
 }
 QSqlQuery qry;
-if(qry.exec("select * from information where username='"+username+"' and password='"+password+"' "))
+if(qry.exec("select * from admininformation where Username='"+username+"' and Password='"+password+"' "))
 {
     int count =0;
 while(qry.next())
