@@ -32,7 +32,11 @@ QString gett = ui->lineEdit->text();
 
     if(query.exec()){
         qDebug("sucess deleting data ");
-        QMessageBox::critical(this, "DELETED", "data deleted");
+        QMessageBox::information(this, "DELETED", "data deleted");
+    }
+    else
+    {
+        QMessageBox::critical(this,"Error","Not saved");
     }
     deltic.close();
 }

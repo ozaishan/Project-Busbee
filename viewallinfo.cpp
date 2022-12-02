@@ -52,7 +52,7 @@ void viewallinfo::on_pushButton_clicked()
     qry.prepare("DELETE FROM driverinfo WHERE EID = "+ui->lineEdit->text()+" ");
     if(qry.exec()){
         qDebug("sucess deleting data ");
-        QMessageBox::critical(this, "DELETED", "data deleted");
+        QMessageBox::information(this, "DELETED", "data deleted");
     }
     allinfo.close();
 }

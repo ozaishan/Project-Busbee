@@ -17,10 +17,7 @@ choice_window::~choice_window()
     delete ui;
 }
 
-void choice_window::on_push_user_clicked()
-{
 
-}
 
 
 void choice_window::on_pushButton_2_clicked()

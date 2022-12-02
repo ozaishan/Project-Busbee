@@ -86,7 +86,7 @@ void getbus::on_pushButton_2_clicked()
    qry.bindValue(":date", date);
    if(qry.exec()){
        qDebug("sucess updating data ");
-       QMessageBox::critical(this, "Saved", "Sucess updating data");
+       QMessageBox::information(this, "Saved", "Sucess updating data");
    }
    else{
        QMessageBox::critical(this, " not Saved", "not saved");

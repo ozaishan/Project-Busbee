@@ -49,7 +49,7 @@ void Signup_page::on_push_signup_clicked()
     qry.bindValue(":Password", password);
     if(qry.exec()){
         qDebug("sucess updating data ");
-        QMessageBox::critical(this, "Saved", "Sucess updating data");
+        QMessageBox::information(this, "Saved", "Sucess updating data");
     }
     else{
         QMessageBox::critical(this, " not Saved", "error updating data");

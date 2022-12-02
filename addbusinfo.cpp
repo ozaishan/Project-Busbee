@@ -65,7 +65,7 @@ ui->Label_Status->setText("Connected sucessfully"); }
       qry.bindValue(":BUSNO", Busno);
       if(qry.exec()){
           qDebug("sucess updating data ");
-          QMessageBox::critical(this, "Saved", "Sucess updating data");
+          QMessageBox::information(this, "Saved", "Sucess updating data");
       }
       else{
           QMessageBox::critical(this, " not Saved", "error updating data");
@@ -98,7 +98,7 @@ void Addbusinfo::on_push_udate_clicked()
 
    if(qry.exec()){
        qDebug("sucess updating data ");
-       QMessageBox::critical(this, "updated", "Sucess updating data");
+       QMessageBox::information(this, "updated", "Sucess updating data");
    }
    else{
        QMessageBox::critical(this, " not updated", "error updating data");

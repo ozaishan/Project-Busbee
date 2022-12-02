@@ -18,7 +18,7 @@ public:
     ~choice_window();
 
 private slots:
-    void on_push_user_clicked();
+
 
     void on_pushButton_2_clicked();
 

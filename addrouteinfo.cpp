@@ -34,7 +34,7 @@ void addrouteinfo::on_saveButton_clicked()
     qry.bindValue(":RouteTo", routeto);
     if(qry.exec()){
         qDebug("sucess updating data ");
-        QMessageBox::critical(this, "Saved", "Sucess updating data");
+        QMessageBox::information(this, "Saved", "Sucess updating data");
     }
     else{
         QMessageBox::critical(this, " not Saved", "error updating data");
