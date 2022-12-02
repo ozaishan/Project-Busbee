@@ -19,7 +19,7 @@ Deletetickets::~Deletetickets()
 
 void Deletetickets::on_pushButton_clicked()
 {
-
+QString gett = ui->lineEdit->text();
     deltic= QSqlDatabase::addDatabase("QSQLITE");
   deltic.setDatabaseName("C:/Users/acer/Desktop/Database/user_info.db");
    if (!deltic.open()){
@@ -27,7 +27,8 @@ void Deletetickets::on_pushButton_clicked()
    }else{
       qDebug("sucessfool"); }
     QSqlQuery query;
-    query.prepare("Delete from ticket_info where username= "+ui->lineEdit->text()+"  ");
+    query.prepare("DELETE FROM ticket_info WHERE username= :username  ");
+    query.bindValue(":username",gett);
 
     if(query.exec()){
         qDebug("sucess deleting data ");
